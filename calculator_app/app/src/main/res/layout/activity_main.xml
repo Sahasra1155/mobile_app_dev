@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:background="#F5F5F5">
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter First Number"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp"
+        android:background="@android:drawable/edit_text"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Second Number"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp"
+        android:background="@android:drawable/edit_text"
+        android:padding="10dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Add"
+            android:textSize="18sp"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/subButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Subtract"
+            android:textSize="18sp"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/mulButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Multiply"
+            android:textSize="18sp"
+            android:layout_margin="8dp"/>
+
+        <Button
+            android:id="@+id/divButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Divide"
+            android:textSize="18sp"
+            android:layout_margin="8dp"/>
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"/>
+</LinearLayout>
